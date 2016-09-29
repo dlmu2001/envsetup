@@ -10,7 +10,7 @@ if [ -z "$github_email" -o -z "$github_username" ];then
 else
     echo "you  email for github is $github_email"
     #generate ssh key for github
-#    ssh-keygen -t rsa -C $github_email 
+    ssh-keygen -t rsa -C $github_email 
     echo "note:please copy .ssh/id_rsa.pub to github website by yourself"
     while [ "$answer" != "y" ];do
         echo $answer
